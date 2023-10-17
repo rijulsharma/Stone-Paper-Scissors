@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone-Paper-Scissor</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/common.css">
+</head>
+
+<body>
+    <div class="main-screen">
+        <div class="scoreboard">
+            <ul>
+                <li>ROCK</li>
+                <li>PAPER</li>
+                <li>SCISSORS</li>
+            </ul>
+            <div class="scorecards">
+                <div class="scorecard">
+                    <h2 class="scorecard-heading">COMPUTER</h2>
+                    <h2 class="scorecard-heading"> SCORE</h2>
+                    <h2 class= "score" id="compScore">0</h2>
+                </div>
+                <div class="scorecard">
+                    <h2 class="scorecard-heading">YOUR</h2>
+                    <h2 class="scorecard-heading"> SCORE  </h2>
+                    <h2 class= "score" id="userScore">0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="user-choice" id="user-choice">
+            <div class="image line-1"></div>
+            <div class="image line-2"></div>
+            <div class="image line-3"></div>
+            <button class="image image-button1" id="paper-choice" onclick="generateRandomNumber('paper-choice')">
+                <img src="./assets/paper.png" alt="Paper" id="paper-choice-image">
+            </button>
+            <button class="image image-button2" id="stone-choice" onclick="generateRandomNumber('stone-choice')">
+                <img src="./assets/rock.png" alt="Rock">
+            </button>
+            <button class="image image-button3" id="scissors-choice" onclick="generateRandomNumber('scissors-choice')">
+                <img src="./assets/scissors.png" alt="Scissors">
+            </button>
+
+        </div>
+        <div class="mega" id="mega">
+            <div class="user-chosen" id="user-chosen" style="display: none;">
+                <p>YOU PICKED</p>
+                <img src="./assets/paper.png" class="" id="paper-chosen-image" style="display: none;"> </img>
+                <img src="./assets/rock.png" class="" id="rock-chosen-image" style="display: none;"> </img>
+                <img src="./assets/scissors.png" class="" id="scissors-chosen-image" style="display: none;"> </img>
+            </div>
+
+            <div class="result" id="result-lost" style="display: none;">
+                <h1>YOU LOST</h1>
+                <h2>AGAINST PC</h2>
+                <button class= "playAgainButton" onclick="playAgain()">PLAY AGAIN</button>
+            </div>
+            <div class="result" id="result-won" style="display: none;">
+                <h1>YOU WIN</h1>
+                <h2>AGAINST PC</h2>
+                <button class= "playAgainButton" onclick="playAgain()">PLAY AGAIN</button>
+            </div>
+            <div class="result" id="result-tie" style="display: none;">
+                <h1>TIE UP</h1>
+                
+                <button class= "playAgainButton" onclick="playAgain()">PLAY AGAIN</button>
+            </div>
+            <div class="comp-chosen" id="comp-chosen" style="display:none ;">
+                
+                    <p>COMPUTER PICKED</p>
+                <img src="./assets/paper.png" class="" id="comp-paper-chosen-image" style="display: none;"> </img>
+                <img src="./assets/rock.png" class="" id="comp-rock-chosen-image" style="display: none;"> </img>
+                <img src="./assets/scissors.png" class="" id="comp-scissors-chosen-image" style="display: none;"> </img>
+
+            </div>
+
+        </div>
+        
+        <div class="rules" id="rules">
+            <div class="cross" onclick="closeRules()">
+                <p>X</p>
+            </div>
+            <h2>GAME RULES</h2>
+            <ul class="rules-list">
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+        <br>
+    </div>
+    
+    <button class="next-button" onclick="openHurray()">NEXT</button>
+    <button class="rules-button" onclick="showRules()">RULES</button>
+    
+    <!--  <button class="rules-button">next</button> -->
+    
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

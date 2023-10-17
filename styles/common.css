@@ -1,0 +1,105 @@
+body{
+    background-color: #89C15E;
+ 
+}
+.button{
+    color: #6B6B6B;
+    background-color: white;
+    width: 174px;
+    height: 44px;
+    top: 639px;
+    left: 581px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.rules-button{
+  
+        position: absolute;
+        bottom: 15px; 
+        right: 15px;
+        width: 119px;
+        height: 40px;
+        border: 2px solid white;
+        color: white;
+        border-radius: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 21px;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+        
+}
+.next-button{
+  
+    position: absolute;
+    bottom: 15px; 
+    right: 150px;
+    width: 119px;
+    height: 40px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    
+}
+.rules-list{
+    list-style-type: square;
+    padding-left: 2em;
+    text-align: left !important;
+    font-size: 16px;
+    padding: 4%; 
+    font-family: 'Roboto', sans-serif;  
+}
+
+.rules-list li {
+    margin-bottom: 12px; 
+}
+.rules-list ::marker{
+   
+    color: #FFD600;
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    
+}
+
+
+.rules {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    color: white;
+    background-color: #004429;
+    text-align: center;
+    width: 278px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 13px;
+    font-family: 'Roboto', sans-serif;
+    border: 7px solid white; 
+}
+
+.cross {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px; 
+    margin-right: -25px; 
+    border-radius: 50%;
+    border: 7px solid white; 
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: 'Dangrek', sans-serif;
+    font-weight: bold;
+}
